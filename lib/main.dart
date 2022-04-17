@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/screens/add_place_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'providers/great_places.dart';
@@ -18,6 +19,9 @@ class MyApp extends StatelessWidget {
               .copyWith(secondary: Colors.amber),
         ),
         home: PlacesListScreen(),
+        routes: {
+          AddPlaceScreen.routeName: (context) => AddPlaceScreen(),
+        },
       ),
     );
   }
